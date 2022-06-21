@@ -1,10 +1,13 @@
-
+import Button from "./components/Button"; 
 
 function App() {
   
   return (
     <div>
-      <p>nguyen thi mai huong</p>
+      <Button>
+        <p>nguyen thi mai huong</p>
+      </Button>
+      
     </div>
   );
 }
