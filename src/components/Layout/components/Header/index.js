@@ -13,10 +13,11 @@ import {
 import Tippy from '@tippyjs/react';
 
 import 'tippy.js/dist/tippy.css';
+import { Link } from 'react-router-dom';
 
 import styles from './Header.module.scss';
 import images from '~/assets/images';
-
+import routesConfig from '~/config/routes';
 import Button from '~/components/Button';
 import Menu from '~/components/Popper/Menu';
 import Image from '~/components/Image';
@@ -97,10 +98,12 @@ function Header() {
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
                 <div className={cx('logo')}>
-                    <img src={images.logo} alt="logo"></img>
+                    <Link to={routesConfig.home} className={cx('logo-link')}>
+                        <img src={images.logo} alt="logo"></img>
+                    </Link>
                 </div>
 
-                <Search/>
+                <Search />
 
                 <div className={cx('actions')}>
                     {currentUser ? (

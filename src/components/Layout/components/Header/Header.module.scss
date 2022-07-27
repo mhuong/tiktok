@@ -20,13 +20,15 @@
     justify-content: space-between;
 }
 
+.logo-link {
+    display: flex;
+}
 
 //Actions
 .actions {
     display: flex;
     align-items: center;
 }
-
 
 .more-btn {
     font-size: 2rem;
@@ -57,7 +59,7 @@
     font-size: 1.4rem;
     font-weight: 600;
     color: var(--white);
-    font-family: 'ProximaNova', sans-serif;
+    font-family: var(--font-family);
     background-color: var(--primary);
 }
 
@@ -69,5 +71,3 @@
     margin-left: 14px;
     cursor: pointer;
 }
-
-
