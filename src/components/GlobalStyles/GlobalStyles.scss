@@ -2,16 +2,16 @@
 
 :root {
     --primary: #fe2c55;
-    --black:#000;
-    --text-color:#161823;
-    --white:#fff;
+    --black: #000;
+    --text-color: #161823;
+    --white: #fff;
 
-    --font-family:'ProximaNova', sans-serif;
+    --font-family: 'ProximaNova', sans-serif;
 
     //Default layout
     --default-layout-header-height: 60px;
-    --default-layout-width:1150px;
-    --default-layout-horizontal-spacer:24px;
+    --default-layout-width: 1150px;
+    --default-layout-horizontal-spacer: 24px;
 }
 
 * {
@@ -29,16 +29,46 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
-    color:var(--text-color) ;
+    color: var(--text-color);
+    overflow-y: overlay;
 }
 
-button,input,[tabindex]{
+//Scrollbar CSS
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+button,
+input,
+[tabindex] {
     outline: none;
     border: none;
 }
 
-a[href]{
-    color:var(--text-color) ;
+a[href] {
+    color: var(--text-color);
     text-decoration: none;
 }
 
@@ -74,22 +104,18 @@ body {
         font-weight: 600;
         font-size: 1.6rem;
         line-height: 2.2rem;
-        background-color: rgba(84,84,84,0.92);
+        background-color: rgba(84, 84, 84, 0.92);
     }
 
     .titpy-arrow {
-        color: rgba(84,84,84,0.92);
+        color: rgba(84, 84, 84, 0.92);
     }
 
     .titpy-content {
         padding: 8px 9px;
     }
 
-    .titpy-box[data-placement^='bottom'] > .titpy-arrow:before{
+    .titpy-box[data-placement^='bottom'] > .titpy-arrow:before {
         top: -8px;
     }
 }
-
-
-
-
